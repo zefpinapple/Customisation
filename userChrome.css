@@ -1,0 +1,100 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* TAB COLORS */
+
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+1) .tab-background {background-color: #81d328E0 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+6) .tab-background {background-color: #9a1adfE0 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+5) .tab-background {background-color: #5d4bfcE0 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+4) .tab-background {background-color: #659cf6E0 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+3) .tab-background {background-color: #f99fdaE0 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+2) .tab-background {background-color: #fa3698E0 !important;}
+
+/* TRANSPARENCY */
+
+:root #nav-bar, #PersonalToolbar, #titlebar {
+  -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
+}
+
+#TabsToolbar, #nav-bar, #PersonalToolbar, #urlbar-background {
+  -moz-appearance: -moz-mac-vibrancy-dark !important;
+}
+
+toolbar {
+  max-height: 32px !important;
+}
+
+/* TABS */
+
+.tab-background {
+  border-radius: 4px !important;
+  margin: -2px !important;
+}
+
+.tab-background[selected="true"]:-moz-lwtheme {
+  background: rgba(255,255,255, 0.0) !important;
+  border: 2px solid rgba(255,255,255, 0.5)  !important;
+}
+
+.tabbrowser-tab {
+  margin: 3px 0px !important;
+  padding: 4px !important;
+  -moz-box-align: center !important;
+}
+
+.tab-line {
+  display: none !important;
+}
+
+tab-item {
+  border: solid 1px #00000012; 
+}
+
+.tab-label {
+  margin-block: 0 !important;
+  color: white !important;
+	font-size: 1.12em !important;
+  font-weight: 580 !important;
+}
+
+.tab-label-container {
+  opacity: 1 !important;
+}
+
+.tab-icon-image {
+  margin-top: 0 !important;
+}
+
+.close-icon {
+  fill: white !important;
+}
+
+#tabs-newtab-button {
+  margin: 5px 0px 5px 0px !important;
+  min-height: 21px !important;
+  max-width: 25px !important;
+  overflow: hidden !
+}
+
+#tabs-newtab-button > image:nth-child(1) {
+  margin: 0px !important;
+  padding: 3px 4px !important;
+  border: 2px solid rgba(255,255,255, 0.0)  !important;
+  transition: all 0.1s ease !important;
+}
+
+#tabs-newtab-button:hover > image:nth-child(1) {
+  padding: 3px 4px !important;
+  background: rgba(255,255,255, 0.0) !important;
+  border: 2px solid rgba(255,255,255, 0.5)  !important;
+}
+
+/* MISC */
+
+#navigator-toolbox {
+	--tabs-border-color: rgba(0,0,0,0) !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+	border-inline-end: 1px solid transparent !important;
+}
